@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Supam Thapa | Full Stack Developer & UI Designer</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=style" rel="stylesheet" />
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Entry Animation Canvas Overlay -->
+  <div id="intro-overlay">
+    <canvas id="intro-canvas"></canvas>
+    <div class="intro-status">
+      <span class="status-code">&lt;SUPAM_THAPA /&gt;</span>
+      <p class="status-text">ASSEMBLING DIGITAL ENVIRONMENT...</p>
+    </div>
+    <button id="skip-intro-btn">Skip Intro <i class="fas fa-forward"></i></button>
+  </div>
+
+  <!-- Main Website Container -->
+  <div id="app-content">
+
+    <!-- Header / Navigation -->
+    <header class="header" id="header">
+      <div class="container nav-container">
+        <a href="#home" class="logo">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-text">Supam</span>
+          <span class="logo-bracket">/&gt;</span>
+        </a>
+
+        <nav class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="#contact" class="btn btn-outline btn-sm">Hire Me</a>
+          <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer Nav -->
+    <div class="mobile-drawer" id="mobile-drawer">
+      <ul class="mobile-nav-list">
+        <li><a href="#home" class="mobile-nav-link">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-socials">
+        <a href="https://github.com/Useless-me67" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <a href="https://instagram.com/supamnahh" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:thapasupam@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero-section">
+        <div class="container hero-container">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="pulse-dot"></span>
+              Available for Freelance &amp; Roles
+            </div>
+            <h1 class="hero-title">
+              Hi, I'm <span class="highlight">Supam Thapa</span>
+            </h1>
+            <h2 class="hero-subtitle">Full Stack Developer &amp; UI Designer</h2>
+            <p class="hero-bio">
+              I build accessible, high-performance web applications with a focus on clean aesthetics and intuitive user experiences. Passionate about modern JavaScript frameworks and responsive design.
+            </p>
+
+            <div class="hero-ctas">
+              <a href="#projects" class="btn btn-primary">
+                View My Work <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+
+            <div class="social-links">
+              <a href="https://github.com/Useless-me67" target="_blank" rel="noopener" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://instagram.com/supamnahh" target="_blank" rel="noopener" title="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="mailto:thapasupam@gmail.com" title="Email">
+                <i class="fas fa-envelope"></i>
+              </a>
+              <a href="tel:9847200287" title="Phone">
+                <i class="fas fa-phone"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="avatar-card">
+              <div class="avatar-wrapper">
+                <div class="avatar-placeholder">
+                  <span class="avatar-initials">ST</span>
+                  <div class="avatar-grid-overlay"></div>
+                </div>
+              </div>
+              <div class="card-float tag-1">
+                <i class="fas fa-code"></i> Frontend Specialist
+              </div>
+              <div class="card-float tag-2">
+                <i class="fas fa-layer-group"></i> UI/UX Driven
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-subtitle">01. ABOUT ME</span>
+            <h2 class="section-title">Crafting digital experiences with precision.</h2>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-text">
+              <p>
+                I'm a dedicated Full Stack Developer and UI Designer driven by the challenge of turning complex problems into elegant, user-centric software solutions.
+              </p>
+              <p>
+                Whether I'm designing responsive layouts or architecture for backend data pipelines, my emphasis remains constant: speed, scalability, accessibility, and modern aesthetic visual standards.
+              </p>
+              
+              <div class="quick-info">
+                <div class="info-item">
+                  <span class="info-label">Location:</span>
+                  <span class="info-value">Nepal</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Email:</span>
+                  <a href="mailto:thapasupam@gmail.com" class="info-value highlight-link">thapasupam@gmail.com</a>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">Phone:</span>
+                  <span class="info-value">+977 9847200287</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills-block">
+              <h3 class="skills-heading"><i class="fas fa-tools"></i> Key Skills &amp; Stack</h3>
+              <div class="skills-grid">
+                <div class="skill-card">
+                  <i class="fab fa-js-square skill-icon"></i>
+                  <span>JavaScript</span>
+                </div>
+                <div class="skill-card">
+                  <i class="fab fa-html5 skill-icon"></i>
+                  <span>HTML5</span>
+                </div>
+                <div class="skill-card">
+                  <i class="fab fa-css3-alt skill-icon"></i>
+                  <span>CSS3</span>
+                </div>
+                <div class="skill-card">
+                  <i class="fab fa-react skill-icon"></i>
+                  <span>React</span>
+                </div>
+                <div class="skill-card">
+                  <i class="fab fa-node-js skill-icon"></i>
+                  <span>Node.js</span>
+                </div>
+                <div class="skill-card">
+                  <i class="fab fa-python skill-icon"></i>
+                  <span>Python</span>
+                </div>
+                <div class="skill-card">
+                  <i class="fab fa-git-alt skill-icon"></i>
+                  <span>Git</span>
+                </div>
+                <div class="skill-card">
+                  <i class="fas fa-code skill-icon"></i>
+                  <span>Tailwind CSS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-subtitle">02. MY WORK</span>
+            <h2 class="section-title">Featured Projects</h2>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Project 1 -->
+            <article class="project-card">
+              <div class="project-img-wrapper">
+                <div class="project-placeholder-bg p1-bg">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="project-overlay">
+                  <a href="https://github.com/Useless-me67" target="_blank" rel="noopener" class="icon-btn"><i class="fab fa-github"></i></a>
+                  <a href="#projects" class="icon-btn"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="tech-tags">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+                <h3 class="project-title">E-Commerce Dashboard</h3>
+                <p class="project-desc">
+                  A fully responsive administrative dashboard featuring live data visualization and dynamic filtering for real-time sales tracking.
+                </p>
+                <div class="project-links">
+                  <a href="https://github.com/Useless-me67" target="_blank" rel="noopener" class="link-btn">GitHub Repo <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card">
+              <div class="project-img-wrapper">
+                <div class="project-placeholder-bg p2-bg">
+                  <i class="fas fa-cloud-sun"></i>
+                </div>
+                <div class="project-overlay">
+                  <a href="https://github.com/Useless-me67" target="_blank" rel="noopener" class="icon-btn"><i class="fab fa-github"></i></a>
+                  <a href="#projects" class="icon-btn"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="tech-tags">
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">OpenWeather API</span>
+                </div>
+                <h3 class="project-title">Weather Forecast App</h3>
+                <p class="project-desc">
+                  Real-time weather application providing hourly updates, interactive location search, and high-accuracy weather forecasting.
+                </p>
+                <div class="project-links">
+                  <a href="https://github.com/Useless-me67" target="_blank" rel="noopener" class="link-btn">GitHub Repo <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-subtitle">03. GET IN TOUCH</span>
+            <h2 class="section-title">Let's Build Something Together</h2>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-info">
+              <h3>Contact Details</h3>
+              <p>
+                I am open to freelance work, full-time positions, or collaboration on exciting tech projects. Feel free to reach out anytime!
+              </p>
+
+              <div class="contact-list">
+                <div class="contact-item">
+                  <div class="c-icon"><i class="fas fa-envelope"></i></div>
+                  <div>
+                    <span class="c-label">Email</span>
+                    <a href="mailto:thapasupam@gmail.com" class="c-val">thapasupam@gmail.com</a>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="c-icon"><i class="fas fa-phone"></i></div>
+                  <div>
+                    <span class="c-label">Phone</span>
+                    <a href="tel:9847200287" class="c-val">9847200287</a>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="c-icon"><i class="fab fa-instagram"></i></div>
+                  <div>
+                    <span class="c-label">Instagram</span>
+                    <a href="https://instagram.com/supamnahh" target="_blank" rel="noopener" class="c-val">@supamnahh</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <form class="contact-form" id="contact-form">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">
+                <span>Send Message</span> <i class="fas fa-paper-plane"></i>
+              </button>
+              <div id="form-status" class="form-status"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <p>&copy; 2026 Supam Thapa. All Rights Reserved.</p>
+        <p class="built-with">Designed &amp; Built with <i class="fas fa-heart"></i> Electric Blue Accent</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
